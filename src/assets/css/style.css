@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.aside-perfil{
+    background-color: lightslategrey;
+    width: 45vw;
+}
+
+.formulario{
+    width: 50vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-attachment: scroll;
+    
+}
+
+input, button{
+   margin: 10px;
+   width: 200px;
+}
