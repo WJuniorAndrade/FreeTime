@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
     <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="src/assets/css/form.css">
+    <link rel="stylesheet" href="src/assets/css/perfil.css">
 
     <script src="src/assets/js/script.js" defer></script>
 </head>
@@ -14,72 +16,92 @@
             
         </nav>
     </header>
+    
 
     <aside class="aside-perfil">
-        <h1>Marcela Andrade</h1>
+
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fa5894" fill-opacity="1" d="M0,128L80,128C160,128,320,128,480,149.3C640,171,800,213,960,208C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        
     </aside>
 
-    <section class="formulario">
+
+    <form class="formulario container">
 
         <h1>Agenda de Clientes</h1>
 
         <label for="nome-cliente">Nome</label>
-        <input type="text" id="nome-cliente">
+        <input type="text" id="nome-cliente" placeholder="Digite seu Nome:" class="input-nome">
 
         <label for="sobrenome-cliente">Sobrenome</label>
-        <input type="text" id="sobrenome-cliente">
-
-        <label for="data-servico">Data</label>
-        <input type="date" name="data" id="data-servico">
-
-        <label for="horas-vagas">Horas Vagas:</label>
-        <select name="Hora" id="horas-vagas">Horas
-            <option value="12:00" disabled>12:00</option>
-            <option value="13:00">13:00</option>
-            <option value="14:00">14:00</option>
-            <option value="15:00">15:00</option>
-        </select>
+        <input type="text" id="sobrenome-cliente" placeholder="Digite seu Sobrenome:"  class="input-nome">
 
 
-        <label for="manicure">Manicure
-            <input type="checkbox" name="atendimento" id="manicure">
-        </label>
 
-        <label for="pedicure">Pedicure
-            <input type="checkbox" name="atendimento" id="pedicure">
-        </label>
 
-        <label for="mani-pedi">Manicure e Pedicure
-            <input type="checkbox" name="atendimento" id="mani-pedi">
-        </label>
+        <!-- Colocar os campos data e hora na mesma linha -->
+        <div id="">
+            <label for="data-servico">Data</label>
+            <input type="date" name="data" id="data-servico" class="data-hora">
 
-        <label for="spa-pe">SPA + PE
-            <input type="checkbox" name="atendimento" id="spa-pe">
-        </label>
+            <label for="horas-vagas">Hora</label>
+            <select name="Hora" id="horas-vagas" class="data-hora">Horas
+                <option value="12:00" disabled>12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+            </select>
 
-        <label for="spa">SPA
-            <input type="checkbox" name="atendimento" id="spa">
-        </label>
+        </div>
 
-        <label for="unhas-gel">Unhas de Gel
-            <input type="checkbox" name="atendimento" id="unhas-gel">
-        </label>
+        <div id="servicos">
+    
+            <label for="manicure">Manicure
+                <input type="checkbox" name="atendimento" id="manicure">
+            </label>
+    
+            <label for="pedicure">Pedicure
+                <input type="checkbox" name="atendimento" id="pedicure">
+            </label>
+    
+            <label for="mani-pedi">Manicure e Pedicure
+                <input type="checkbox" name="atendimento" id="mani-pedi">
+            </label>
+    
+            <label for="spa-pe">SPA + PE
+                <input type="checkbox" name="atendimento" id="spa-pe">
+            </label>
+    
+            <label for="spa">SPA
+                <input type="checkbox" name="atendimento" id="spa">
+            </label>
+    
+            <label for="unhas-gel">Unhas de Gel
+                <input type="checkbox" name="atendimento" id="unhas-gel">
+            </label>
+    
+            <label for="manutencao">Manutenção
+                <input type="checkbox" name="atendimento" id="manutencao">
+            </label>
+    
+            <label for="banho-gel">Banho de Gel
+                <input type="checkbox" name="atendimento" id="banho-gel">
+            </label>
+    
+            <label for="esmaltacao"> Esmaltação em Gel
+                <input type="checkbox" name="atendimento" id="esmaltacao">
+            </label>
 
-        <label for="manutencao">Manutenção 
-            <input type="checkbox" name="atendimento" id="manutencao">
-        </label>
+            <label for="manut-banho-gel">Manutenção
+                <input type="checkbox" name="atendimento" id="manut-banho-gel">
+            </label>
 
-        <label for="banho-gel">Banho de Gel
-            <input type="checkbox" name="atendimento" id="banho-gel">
-        </label>
+        </div>
 
-        <label for="esmaltacao"> Esmaltação em Gel
-            <input type="checkbox" name="atendimento" id="esmaltacao">
-        </label>
 
         <button id="enviar">Enviar</button>
 
         
-    </section>
+    </form>
 </body>
 </html>

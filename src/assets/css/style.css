@@ -5,29 +5,18 @@
 
 }
 
-body{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-}
-
-.aside-perfil{
-    background-color: lightslategrey;
-    width: 45vw;
-}
-
-.formulario{
-    width: 50vw;
-    height: 100vh;
-    margin: auto;
+/* .container{
     display: flex;
     flex-direction: column;
-    background-attachment: scroll;
-    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
+
+select{
+    width: 50px;
 }
 
 input, button{
    margin: 10px;
-   width: 200px;
 }

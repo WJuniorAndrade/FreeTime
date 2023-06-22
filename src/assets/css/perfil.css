@@ -1,0 +1,10 @@
+.aside-perfil {
+    height: 60vh;
+    position: relative;
+    background-color: #fa5894;
+}
+
+.waves {
+    position: absolute;
+    bottom: -60px;
+}
