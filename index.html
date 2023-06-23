@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda</title>
+    <title>Agenda de Atendimentos</title>
     <link rel="stylesheet" href="src/assets/css/style.css">
     <link rel="stylesheet" href="src/assets/css/form.css">
     <link rel="stylesheet" href="src/assets/css/perfil.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <script src="src/assets/js/script.js" defer></script>
 </head>
@@ -26,82 +28,147 @@
     </aside>
 
 
-    <form class="formulario container">
+    <form class="formulario">
 
-        <h1>Agenda de Clientes</h1>
+        <h2>Agenda de Clientes</h2>
 
-        <label for="nome-cliente">Nome</label>
-        <input type="text" id="nome-cliente" placeholder="Digite seu Nome:" class="input-nome">
+        <section>
 
-        <label for="sobrenome-cliente">Sobrenome</label>
-        <input type="text" id="sobrenome-cliente" placeholder="Digite seu Sobrenome:"  class="input-nome">
-
+            <label for="nome-cliente">Nome</label>
+            <input type="text" id="nome-cliente" placeholder="Digite seu Nome:" class="input-nome">
 
 
+            <label for="sobrenome-cliente">Sobrenome</label>
+            <input type="text" id="sobrenome-cliente" placeholder="Digite seu Sobrenome:"  class="input-nome">
 
-        <!-- Colocar os campos data e hora na mesma linha -->
-        <div id="">
-            <label for="data-servico">Data</label>
-            <input type="date" name="data" id="data-servico" class="data-hora">
 
-            <label for="horas-vagas">Hora</label>
-            <select name="Hora" id="horas-vagas" class="data-hora">Horas
-                <option value="12:00" disabled>12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-            </select>
+            <label for="celular">Contato</label>
+            <input type="tel" id="celular" maxlength="11"  pattern="\(\d{2}\)\s\d{5}-\d{4}"  placeholder="(DDD) 99999-9999" class="input-nome">
+            
+            <!-- Colocar os campos data e hora na mesma linha -->
+            <div id="">
+                <label for="data-servico">Data</label>
+                <input type="date" name="data" id="data-servico" class="data-hora">
+                <label for="horas-vagas">Hora</label>
+                <select name="Hora" id="horas-vagas" class="data-hora">Horas
+                    <option value="12:00" disabled>12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                </select>
+            </div>
+        </section>
 
-        </div>
 
-        <div id="servicos">
-    
-            <label for="manicure">Manicure
-                <input type="checkbox" name="atendimento" id="manicure">
-            </label>
-    
-            <label for="pedicure">Pedicure
-                <input type="checkbox" name="atendimento" id="pedicure">
-            </label>
-    
-            <label for="mani-pedi">Manicure e Pedicure
-                <input type="checkbox" name="atendimento" id="mani-pedi">
-            </label>
-    
-            <label for="spa-pe">SPA + PE
-                <input type="checkbox" name="atendimento" id="spa-pe">
-            </label>
-    
-            <label for="spa">SPA
-                <input type="checkbox" name="atendimento" id="spa">
-            </label>
-    
-            <label for="unhas-gel">Unhas de Gel
-                <input type="checkbox" name="atendimento" id="unhas-gel">
-            </label>
-    
-            <label for="manutencao">Manutenção
-                <input type="checkbox" name="atendimento" id="manutencao">
-            </label>
-    
-            <label for="banho-gel">Banho de Gel
-                <input type="checkbox" name="atendimento" id="banho-gel">
-            </label>
-    
-            <label for="esmaltacao"> Esmaltação em Gel
-                <input type="checkbox" name="atendimento" id="esmaltacao">
-            </label>
 
-            <label for="manut-banho-gel">Manutenção
-                <input type="checkbox" name="atendimento" id="manut-banho-gel">
-            </label>
+        <h2>Atendimentos</h2>
+
+        <div class="container-servicos">
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+                <!-- <div class="desc-container">
+                    <p>Esmaltação de Gel</p>
+                </div> -->
+
+            </div>
+
+            
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="pedicure" class="option-checkbox">
+
+                <label for="pedicure"><img src="src/assets/img/pedicure.svg" alt="Pedicure" class="img-servicos"></label>
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            </div>
+
+
+            <div class="container">
+
+                <input type="checkbox" name="atendimento" id="manicure" class="option-checkbox">
+
+                <label for="manicure"><img src="src/assets/img/manicure.svg" alt="Manicure" class="img-servicos"></label>
+
+            </div>
+
+
 
         </div>
 
 
         <button id="enviar">Enviar</button>
 
-        
     </form>
+
 </body>
 </html>

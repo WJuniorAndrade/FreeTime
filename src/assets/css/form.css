@@ -5,6 +5,12 @@
     padding: 3rem 1rem;
 }
 
+h2 {
+    text-align: center;
+    margin: 1.5rem 0rem 2rem 0rem;
+    font-size: 2rem;
+}
+
 .input-nome {
     width: 85vw;
     height: 40px;
@@ -23,8 +29,15 @@
     border-radius: .5rem;
 }
 
-
 #servicos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    /* grid-template-columns: 1fr 1fr; */
 }
+
+/* .checkbox-servicos::before {
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/perfil-FreeTime.jpg");
+    background-size: cover;
+
+} */
