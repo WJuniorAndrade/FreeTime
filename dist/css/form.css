@@ -1,0 +1,39 @@
+.formulario {
+    padding: 3rem 0rem;
+    max-width: 95vw;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 1.5rem 0rem 2rem 0rem;
+    font-size: 2rem;
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text, .data-hora {
+    height: 5vh;
+    border: none;
+    outline: none;
+    padding: 0px 6px;
+    margin: 0.5rem;
+    border-radius: .5rem;
+}
+
+.data-hora {
+    width: 30vw;
+}
+
+#agendamento-data-hora{
+    margin: auto;
+}
+
+#enviar {
+    width: 30vw;
+    height: 5vh;
+    margin: auto;
+}

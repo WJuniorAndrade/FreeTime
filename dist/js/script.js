@@ -4,6 +4,8 @@ var atend =  document.getElementById("manicure")
 var enviar = document.getElementById("enviar")
 var nome = document.querySelector("#nome-cliente")
 
+const nu1 = document.querySelector("#nu1")
+
 enviar.addEventListener("click", function (event) {
     event.preventDefault()
     /* console.log(horas.value);
@@ -14,5 +16,5 @@ enviar.addEventListener("click", function (event) {
     console.log(atend.value);
 
 
-
+    nu1.classList.add("nu1")
 })

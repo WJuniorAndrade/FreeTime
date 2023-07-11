@@ -1,48 +1,29 @@
-*{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
-
-}
-
-:root{
-    --rosa: #fa5893;
-    --rosa2: #fa589326;
-    --azul: #A4DEF9;
-    --azul2: #52D1DC;
-    --roxo: #5A0B4D;
-    --roxo2: #37123C;
-    --branco: #FFFBFC; 
-
-}
 
 .container-servicos {
     display: grid;
     gap: .5rem;
     row-gap: 1.5rem;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0rem auto 2rem auto ;
 }
 
-.container {
+
+.box-container {
     width: 45vw;
     height: 30vh;
+    margin: auto;
     background-color: var(--rosa2);
     cursor: pointer;
     position: relative;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.372);
 } 
 
-.label-container {
-    border-radius: 2rem;
-}
- 
-.area-label {
-    width: 100%;
-    height: 75%;
-    background-position: bottom;
 
+.img-area-label {
+    width: 100%;
+    height: 70%; 
 }
+
 
 .option-checkbox{
     appearance: none;
@@ -73,12 +54,13 @@
 .img-label {
     width: 100%;
     height: 100%;
-   
+    object-fit: cover;
+    
 }
 
 .descr-servicos {
     width: 100%;
-    height: 25%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -87,22 +69,4 @@
     text-align: center;
     font-size: .8rem;
    
-}
-
-
-
-
-/* .desc-container {
-    text-align: end;
-    background-color: var(--roxo2);
-}
- */
-
-
-select{
-    width: 50px;
-}
-
-input, button{
-   margin: 10px;
 }
