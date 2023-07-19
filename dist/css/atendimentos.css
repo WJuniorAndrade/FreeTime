@@ -5,13 +5,12 @@
     row-gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
     margin: 0rem auto 2rem auto ;
+
 }
 
 
 .box-container {
-    width: 45vw;
-    height: 30vh;
-    margin: auto;
+    height: 250px;
     background-color: var(--rosa2);
     cursor: pointer;
     position: relative;
@@ -69,4 +68,35 @@
     text-align: center;
     font-size: .8rem;
    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container-servicos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box-container{
+        height: 265px;
+    }
+}
+
+@media  (min-width: 769px) and (max-width: 960px) {
+    .container-servicos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .box-container{
+        height: 280px;
+    }
+
+}
+
+@media (min-width: 961px) {
+    .container-servicos{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .box-container{
+        height: 300px;
+    }
 }

@@ -1,0 +1,30 @@
+{
+  "name": "freetime",
+  "version": "1.0.0",
+  "description": "O sistema FreeTime possibilita  que o  proprio cliente agende o horario, dia e o serviço (atendimento) que deseja realizar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WJuniorAndrade/FreeTime.git"
+  },
+  "keywords": [
+    "Agendamento",
+    "serviços",
+    "atendimentos",
+    "e",
+    "empresas."
+  ],
+  "author": "Junior Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WJuniorAndrade/FreeTime/issues"
+  },
+  "homepage": "https://github.com/WJuniorAndrade/FreeTime#readme",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  }
+}
